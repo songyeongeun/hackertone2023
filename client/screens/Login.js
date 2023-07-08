@@ -25,7 +25,10 @@ function Login({navigation}) {
       <Button
         title="로그인"
         onPress={() => {
-          navigation.replace('Tab');
+          // if 챌린지 시작 전이면
+          navigation.replace('ChallengeStack');
+          // else if 챌린지 시작 후면
+          // navigation.replace('Tab');
         }}
       />
       <Button

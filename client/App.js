@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import MyStack from './navigation/Stack';
+import LoginStack from './navigation/LoginStack';
 import Loading from './screens/Loading';
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
     <Loading />
   ) : (
     <NavigationContainer>
-      <MyStack />
+      <LoginStack />
     </NavigationContainer>
   );
 };

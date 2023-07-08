@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Main from '../screens/Main';
+import MainStack from './MainStack';
 import Community from '../screens/Community';
 import Information from '../screens/Information';
 
@@ -14,7 +14,7 @@ const MyTab = () => {
       }}
       initialRouteName="Main">
       <Tab.Screen name="Information" component={Information} />
-      <Tab.Screen options={{headerLeft: null}} name="Main" component={Main} />
+      <Tab.Screen name="Main" component={MainStack} />
       <Tab.Screen name="Comunity" component={Community} />
     </Tab.Navigator>
   );
